@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bienvenido al Ajedrez online</title>
+<link href="styles/styles.css" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="links">
+	 <a href="login.html"><img src="images/peon_negro.svg" alt="Peon negro"/>Home</a>
+	 <a href="altaJugador.jsp">Registrarse</a>
+</div>
+
+<div align="center" class="main">
+	<h1>¡Hola!</h1>
+	<h2>Ingresa los datos de la partida</h2>
+	<form action="loginWeb" method="POST" onsubmit="jugar" class="container">
+		<input type="text" value="" name="dniJugadorBlanco" id="dniJugadorBlanco" placeholder="DNI Jugador Blanco" required="required">
+		<input type="text" value="" name="dniJugadorNegro" id="dniJugadorNegro" placeholder="DNI Jugador Negro" required="required">
+		<button type="submit" class="btn btn-primary btn-block btn-large" id="jugar" name="jugar">JUGAR</button>
+	</form>
+</div>
+</body>
+</html>
